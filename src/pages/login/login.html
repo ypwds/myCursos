@@ -1,0 +1,34 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Login</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    
+    <div class="flex-center">
+
+        <img
+            src="https://1.bp.blogspot.com/-hUe-a2BlvWU/V7NBLtE8NnI/AAAAAAAAH5s/F8UL76I8UeE0PQDlqJNDzSg-OGQS3bJEgCLcB/s1600/CURSOS.png">
+
+        <ion-list>
+
+            <ion-item>
+                <ion-label stacked>Nome de Usuário</ion-label>
+                <ion-input type="text" [(ngModel)]="username"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label stacked>Senha</ion-label>
+                <ion-input type="password" [(ngModel)]="password"></ion-input>
+            </ion-item>
+
+            <br>
+
+            <button ion-button block (click)="entrar()">Entrar</button>
+            <button ion-button block (click)="cadastrar()" clear>Novo Usuário</button>
+
+        </ion-list>
+    </div>
+
+</ion-content>
