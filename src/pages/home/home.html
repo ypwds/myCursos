@@ -1,18 +1,51 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Cursos</ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+    
+    <div padding>
+        <ion-segment [(ngModel)]="cursos">
+            <ion-segment-button value="done">
+                Concluídos
+            </ion-segment-button>
+            <ion-segment-button value="toDo">
+                Próximos
+            </ion-segment-button>
+        </ion-segment>
+    </div>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v3">docs</a> will show you the way.
-  </p>
+    <div [ngSwitch]="cursos">
+        <ion-list *ngSwitchCase="'done'">
+            <ion-item (click)="detalhar()">
+                <ion-thumbnail item-start>
+                    <img src="https://picsum.photos/500/500/?blur">
+                </ion-thumbnail>
+                <p>Introdução a Programação</p>
+                <p>Iniciará em 20/10/2021</p>
+            </ion-item>
+            <ion-item>
+                <ion-thumbnail item-start>
+                    <img src="https://picsum.photos/500/500/?blur">
+                </ion-thumbnail>
+                <p>Introdução a Programação</p>
+                <p>Iniciará em 20/10/2021</p>
+            </ion-item>
+        </ion-list>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+        <ion-list *ngSwitchCase="'toDo'">
+            <ion-item>
+                <ion-thumbnail item-start>
+                    <img src="https://picsum.photos/500/500/?blur">
+                </ion-thumbnail>
+                <p>Introdução a Programação</p>
+                <p>Iniciará em 20/10/2021</p>
+            </ion-item>
+        </ion-list>
+    </div>
 </ion-content>

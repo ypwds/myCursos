@@ -1,23 +1,20 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>List</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Detalhes</ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-start></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-end>
-        {{item.note}}
-      </div>
-    </button>
-  </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
-  </div>
+    <ion-item>
+        <ion-thumbnail item-start>
+            <img src="https://picsum.photos/500/500/?blur">
+        </ion-thumbnail>
+        <p>Introdução a Programação</p>
+        <p>Iniciará em 20/10/2021</p>
+    </ion-item>
+
+    <button ion-button block (click)="fechar()">Fechar</button>
 </ion-content>
