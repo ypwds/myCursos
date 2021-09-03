@@ -9,7 +9,8 @@ import { ListPage } from '../list/list';
 })
 export class HomePage {
 
-    cursos = [];
+    cursosDone = [];  //Para os cursos concluídos
+    cursosToDo = [];  //Para os cursos para fazer
     listas: string;
 
     constructor(public navCtrl: NavController, public dadosProvider: DadosProvider) {
@@ -19,9 +20,14 @@ export class HomePage {
     ionViewDidEnter() {
         console.log('ionViewDidEnter HomePage');
 
-        this.cursos = this.dadosProvider.pegarCursos();
+        //Pegando os cursos feitos e adicionando a vetor de cursos concluídos
+        this.cursosDone = this.dadosProvider.pegarCursosDone();
 
-        console.log("Dados recebidos no HOME: ", this.cursos);
+        //Pegando os cursos para fazer e adicionando ao vetor de cursos pra fazer
+        this.cursosToDo = this.dadosProvider.pegarCursosToDo();
+
+        console.log("Dados recebidos no HOME: (Done)", this.cursosDone); //mostrando no console
+        console.log("Dados recebidos no HOME: (ToDo)", this.cursosToDo); //mostrando no console
     }
 
     detalhar(curso) {

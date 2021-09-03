@@ -23,7 +23,7 @@
 
     <div [ngSwitch]="listas">
         <ion-list *ngSwitchCase="'done'">
-            <ion-list *ngFor="let curso of cursos" (click)="detalhar(curso)">
+            <ion-list *ngFor="let curso of cursosDone" (click)="detalhar(curso)">
                 <ion-item>
                     <ion-thumbnail item-start>
                         <img src="{{curso.img_icon}}">
@@ -35,7 +35,7 @@
         </ion-list>
 
         <ion-list *ngSwitchCase="'toDo'">
-            <ion-list *ngFor="let curso of cursos" (click)="detalhar(curso)">
+            <ion-list *ngFor="let curso of cursosToDo" (click)="detalhar(curso)">
                 <ion-item>
                     <ion-thumbnail item-start>
                         <img src="{{curso.img_icon}}">
