@@ -17,16 +17,17 @@ export class HomePage {
     }
 
     ionViewDidEnter() {
+        console.log('ionViewDidEnter HomePage');
+
         this.cursos = this.dadosProvider.pegarCursos();
 
         console.log("Dados recebidos no HOME: ", this.cursos);
     }
 
-    detalhar(item) {
-        console.log("ENTRANDO NA TELA DE DETALHES");
-        console.log(item.nome);
-        console.log(item.conteudo);
-        this.navCtrl.push(ListPage, { datelhes: item });
+    detalhar(curso) {
+        //console.log("ENTRANDO NA TELA DE DETALHES");
+        //console.log(curso);
+        this.navCtrl.push(ListPage, { detalhe: curso });
     }
 
 }

@@ -10,33 +10,36 @@
             "O que é Git? O que é Versionamento?",
             "O que pe GitHub?",
             "Instalação e Configurações"
-        ]
+        ],
+        "done": false
     },
     {
         "id": 2,
         "nome": "Photoshop",
         "professor": "Paulo César",
         "dt_realizacao": "06/07/2020",
-        "carga_horaria": 20,
+        "carga_horaria": 22,
         "img_icon": "https://www.cursoemvideo.com/wp-content/uploads/2019/08/photoshop-300x300.jpg",
         "conteudo": [
             "Recorte de Cabelos",
             "Preenchimento Sensível ao Conteúdo",
             "Maquiagem Digital com Photoshop"
-        ]
+        ],
+        "done": true
     },
     {
         "id": 3,
         "nome": "Bases Numéricas",
         "professor": "Laura Lira",
         "dt_realizacao": "06/07/2020",
-        "carga_horaria": 20,
+        "carga_horaria": 24,
         "img_icon": "https://www.cursoemvideo.com/wp-content/uploads/2019/08/bases-numericas.jpg",
         "conteudo": [
             "Notação Posicional",
             "Números Binários",
             "Números Octais e Hexadecimais"
-        ]
+        ],
+        "done": false
     },
     {
         "id": 4,
@@ -49,7 +52,8 @@
             "O que o JavaScript é capaz de fazer?",
             "Criando o seu primeiro script",
             "Variáveis e Tipos Primitivos"
-        ]
+        ],
+        "done": true
     },
     {
         "id": 5,
@@ -62,7 +66,8 @@
             "Instalando o Raspbian",
             "Configurações visuais no Raspbian",
             "Instalação ultra fácil com o Noobs"
-        ]
+        ],
+        "done": false
     },
     {
         "id": 6,
@@ -75,7 +80,8 @@
             "Classificação das Redes",
             "Tipos de Redes",
             "Endereçamento IP"
-        ]
+        ],
+        "done": true
     },
     {
         "id": 7,
@@ -88,7 +94,8 @@
             "Criando o primeiro Banco de Dados",
             "Inserindo Dados na Tabela (INSERT INTO)",
             "Alterando a Estrutura da Tabela (ALTER TABLE e DROP TABLE)"
-        ]
+        ],
+        "done": false
     },
     {
         "id": 8,
@@ -101,6 +108,7 @@
             "Tags Básicas em HTML5",
             "Parágrafos, Quebras e Símbolos Especiais",
             "Formatação de Texto com HTML5 e CSS3"
-        ]
+        ],
+        "done": true
     }
 ]

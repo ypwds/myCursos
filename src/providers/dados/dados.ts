@@ -14,7 +14,7 @@ export class DadosProvider {
 
         this.http.get('assets/db/cursos.json').toPromise().then(data => {
             console.log("Dados recebidos no PROVIDER: ", data);
-            console.log(data[1].nome);
+            //console.log(data[1].nome);
 
             for (let key in data) {
                 if(data.hasOwnProperty(key)) {
