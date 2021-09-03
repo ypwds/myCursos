@@ -7,13 +7,15 @@
     </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
+
+    <h1>Nome: {{item?.nome}}</h1>
     <ion-item>
         <ion-thumbnail item-start>
-            <img src="https://picsum.photos/500/500/?blur">
+            <img src="{{item?.img_icon}}">
         </ion-thumbnail>
-        <p>Introdução a Programação</p>
-        <p>Iniciará em 20/10/2021</p>
+        <h2>{{item?.nome}}</h2>
+        <p>Iniciará em: {{item?.dt_realizacao}}</p>
     </ion-item>
 
     <button ion-button block (click)="fechar()">Fechar</button>

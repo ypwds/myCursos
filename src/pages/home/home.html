@@ -8,44 +8,43 @@
 </ion-header>
 
 <ion-content padding>
-    
-    <div padding>
-        <ion-segment [(ngModel)]="cursos">
-            <ion-segment-button value="done">
+
+
+    <ion-toolbar no-border-top>
+        <ion-segment [(ngModel)]="listas">
+            <ion-segment-button checked value="done">
                 Concluídos
             </ion-segment-button>
             <ion-segment-button value="toDo">
-                Próximos
+                Proxímos
             </ion-segment-button>
         </ion-segment>
-    </div>
+    </ion-toolbar>
 
-    <div [ngSwitch]="cursos">
+    <div [ngSwitch]="listas">
         <ion-list *ngSwitchCase="'done'">
-            <ion-item (click)="detalhar()">
-                <ion-thumbnail item-start>
-                    <img src="https://picsum.photos/500/500/?blur">
-                </ion-thumbnail>
-                <p>Introdução a Programação</p>
-                <p>Iniciará em 20/10/2021</p>
-            </ion-item>
-            <ion-item>
-                <ion-thumbnail item-start>
-                    <img src="https://picsum.photos/500/500/?blur">
-                </ion-thumbnail>
-                <p>Introdução a Programação</p>
-                <p>Iniciará em 20/10/2021</p>
-            </ion-item>
+            <ion-list *ngFor="let curso of cursos" (click)="detalhar(curso)">
+                <ion-item>
+                    <ion-thumbnail item-start>
+                        <img src="{{curso.img_icon}}">
+                    </ion-thumbnail>
+                    <h2>{{curso.nome}}</h2>
+                    <p>Concluído em: {{curso.dt_realizacao}}</p>
+                </ion-item>
+            </ion-list>
         </ion-list>
 
         <ion-list *ngSwitchCase="'toDo'">
-            <ion-item>
-                <ion-thumbnail item-start>
-                    <img src="https://picsum.photos/500/500/?blur">
-                </ion-thumbnail>
-                <p>Introdução a Programação</p>
-                <p>Iniciará em 20/10/2021</p>
-            </ion-item>
+            <ion-list *ngFor="let curso of cursos" (click)="detalhar(curso)">
+                <ion-item>
+                    <ion-thumbnail item-start>
+                        <img src="{{curso.img_icon}}">
+                    </ion-thumbnail>
+                    <h2>{{curso.nome}}</h2>
+                    <p>Iniciará em: {{curso.dt_realizacao}}</p>
+                </ion-item>
+            </ion-list>
         </ion-list>
     </div>
+
 </ion-content>

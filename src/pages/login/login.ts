@@ -25,7 +25,7 @@ export class LoginPage {
     }
 
     entrar() {
-        console.log('Entrar ---' + ' Username: ' + this.username + ' Senha: ' + this.password);
+        //console.log('Entrar ---' + ' Username: ' + this.username + ' Senha: ' + this.password);
 
         const loader = this.loadingCtrl.create({
             content: "Aguarde...",
@@ -36,7 +36,7 @@ export class LoginPage {
             console.log('Dados Recebidos:', data);
             loader.dismiss();
 
-            //if (data.username === this.username && data.senha === this.password) {
+            //if (data.username === this.username && data.senha == this.password) {
             if (data.username === 'ypwds' && data.senha === 12345) {
                 console.log('USUARIO LOGADO');
                 this.navCtrl.setRoot(HomePage);

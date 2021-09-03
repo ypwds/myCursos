@@ -1,106 +1,106 @@
 [
     {
         "id": 1,
-        "nome": "Programação 1",
-        "professor": "Marcos",
+        "nome": "Git e GitHub",
+        "professor": "Marcos Paulo",
         "dt_realizacao": "06/07/2020",
-        "carga_horaria": 4,
-        "img_icon": "link da imagem",
+        "carga_horaria": 20,
+        "img_icon": "https://www.cursoemvideo.com/wp-content/uploads/2020/04/git-1-300x300.png",
         "conteudo": [
-            "Introdução a Algoritmos",
-            "Tipos de Dados",
-            "Laços  de Repetição"
+            "O que é Git? O que é Versionamento?",
+            "O que pe GitHub?",
+            "Instalação e Configurações"
         ]
     },
     {
         "id": 2,
-        "nome": "Programação 1",
-        "professor": "Marcos",
+        "nome": "Photoshop",
+        "professor": "Paulo César",
         "dt_realizacao": "06/07/2020",
-        "carga_horaria": 4,
-        "img_icon": "link da imagem",
+        "carga_horaria": 20,
+        "img_icon": "https://www.cursoemvideo.com/wp-content/uploads/2019/08/photoshop-300x300.jpg",
         "conteudo": [
-            "Introdução a Algoritmos",
-            "Tipos de Dados",
-            "Laços  de Repetição"
+            "Recorte de Cabelos",
+            "Preenchimento Sensível ao Conteúdo",
+            "Maquiagem Digital com Photoshop"
         ]
     },
     {
         "id": 3,
-        "nome": "Programação 1",
-        "professor": "Marcos",
+        "nome": "Bases Numéricas",
+        "professor": "Laura Lira",
         "dt_realizacao": "06/07/2020",
-        "carga_horaria": 4,
-        "img_icon": "link da imagem",
+        "carga_horaria": 20,
+        "img_icon": "https://www.cursoemvideo.com/wp-content/uploads/2019/08/bases-numericas.jpg",
         "conteudo": [
-            "Introdução a Algoritmos",
-            "Tipos de Dados",
-            "Laços  de Repetição"
+            "Notação Posicional",
+            "Números Binários",
+            "Números Octais e Hexadecimais"
         ]
     },
     {
         "id": 4,
-        "nome": "Programação 1",
-        "professor": "Marcos",
+        "nome": "Javascript",
+        "professor": "Paulo Caselli",
         "dt_realizacao": "06/07/2020",
-        "carga_horaria": 4,
-        "img_icon": "link da imagem",
+        "carga_horaria": 40,
+        "img_icon": "https://www.cursoemvideo.com/wp-content/uploads/2019/08/javascript-300x300.jpg",
         "conteudo": [
-            "Introdução a Algoritmos",
-            "Tipos de Dados",
-            "Laços  de Repetição"
+            "O que o JavaScript é capaz de fazer?",
+            "Criando o seu primeiro script",
+            "Variáveis e Tipos Primitivos"
         ]
     },
     {
         "id": 5,
-        "nome": "Programação 1",
-        "professor": "Marcos",
+        "nome": "Raspberry Pi Básico",
+        "professor": "Rozelma",
         "dt_realizacao": "06/07/2020",
-        "carga_horaria": 4,
-        "img_icon": "link da imagem",
+        "carga_horaria": 35,
+        "img_icon": "https://www.cursoemvideo.com/wp-content/uploads/2020/01/raspberrypi-300x300.jpg",
         "conteudo": [
-            "Introdução a Algoritmos",
-            "Tipos de Dados",
-            "Laços  de Repetição"
+            "Instalando o Raspbian",
+            "Configurações visuais no Raspbian",
+            "Instalação ultra fácil com o Noobs"
         ]
     },
     {
         "id": 6,
-        "nome": "Programação 1",
-        "professor": "Marcos",
+        "nome": "Redes de Computadores",
+        "professor": "Gabriella Curpetino",
         "dt_realizacao": "06/07/2020",
-        "carga_horaria": 4,
-        "img_icon": "link da imagem",
+        "carga_horaria": 120,
+        "img_icon": "https://www.cursoemvideo.com/wp-content/uploads/2019/08/redes-300x300.jpg",
         "conteudo": [
-            "Introdução a Algoritmos",
-            "Tipos de Dados",
-            "Laços  de Repetição"
+            "Classificação das Redes",
+            "Tipos de Redes",
+            "Endereçamento IP"
         ]
     },
     {
         "id": 7,
-        "nome": "Programação 1",
-        "professor": "Marcos",
+        "nome": "MySQL",
+        "professor": "Raphael Albino",
         "dt_realizacao": "06/07/2020",
-        "carga_horaria": 4,
-        "img_icon": "link da imagem",
+        "carga_horaria": 25,
+        "img_icon": "https://www.cursoemvideo.com/wp-content/uploads/2019/08/bancodedados-sql-300x300.jpg",
         "conteudo": [
-            "Introdução a Algoritmos",
-            "Tipos de Dados",
-            "Laços  de Repetição"
+            "Criando o primeiro Banco de Dados",
+            "Inserindo Dados na Tabela (INSERT INTO)",
+            "Alterando a Estrutura da Tabela (ALTER TABLE e DROP TABLE)"
         ]
     },
     {
         "id": 8,
-        "nome": "Programação 1",
-        "professor": "Marcos",
+        "nome": "HTML5",
+        "professor": "Ytalo Paulo",
         "dt_realizacao": "06/07/2020",
-        "carga_horaria": 4,
-        "img_icon": "link da imagem",
+        "carga_horaria": 45,
+        "img_icon": "https://www.cursoemvideo.com/wp-content/uploads/2019/08/html5-300x300.jpg",
         "conteudo": [
-            "Introdução a Algoritmos",
-            "Tipos de Dados",
-            "Laços  de Repetição"
+            "Tags Básicas em HTML5",
+            "Parágrafos, Quebras e Símbolos Especiais",
+            "Formatação de Texto com HTML5 e CSS3"
         ]
     }
 ]

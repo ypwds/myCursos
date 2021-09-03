@@ -10,6 +10,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AutenticacaoProvider } from '../providers/autenticacao/autenticacao';
 import { HttpClientModule } from '@angular/common/http';
+import { DadosProvider } from '../providers/dados/dados';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { HttpClientModule } from '@angular/common/http';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AutenticacaoProvider
+    AutenticacaoProvider,
+    DadosProvider
   ]
 })
 export class AppModule {}
