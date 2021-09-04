@@ -36,8 +36,8 @@ export class LoginPage {
             console.log('Dados Recebidos:', data);
             loader.dismiss();
 
-            //if (data.username === this.username && data.senha == this.password) {
-            if (data.username === 'ypwds' && data.senha === 12345) {
+            if (data.username === this.username && data.senha == this.password) {
+            //if (data.username === 'ypwds' && data.senha === 12345) {
                 console.log('USUARIO LOGADO');
                 this.navCtrl.setRoot(HomePage);
 
@@ -63,6 +63,17 @@ export class LoginPage {
         });
 
         // this.navCtrl.setRoot(HomePage);
+    }
+
+    cadastrar(){
+        console.log("AINDA EM CONSTRUÇÃO");
+
+        const alert = this.alertCtrl.create({
+            title: 'Indisponível',
+            subTitle: 'Não estamos aceitando novos usuários no momento!',
+            buttons: ['OK']
+        });
+        alert.present();
     }
 
 }
