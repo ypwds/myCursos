@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 @Component({
     selector: 'page-list',
@@ -23,6 +24,8 @@ export class ListPage {
     }
 
     fechar() {
-        this.navCtrl.pop();
+        //dava error ao abrir a tela de detalhes(list) sem ser clicando nos cursos, daí quando fechava dava error pois não encontrava a página root
+        //this.navCtrl.pop()
+        this.navCtrl.setRoot(HomePage);
     }
 }

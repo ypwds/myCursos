@@ -1,15 +1,18 @@
 .menu-inner{
-    .header-md{
-        //background-color: black;
-    }
     .toolbar-md{
-        min-height: 10px;
+        min-height: 15px;
+        padding: 0%;
     }
     .content-md{
-        background: gray;
+        background: rgb(51, 51, 51);
     }
 
     .menuLateralItem {
         background-color: transparent;
+        color: rgb(179, 176, 172);
     }
+}
+
+.toolbar-title.toolbar-title-md {
+    color: rgb(179, 176, 172);
 }
